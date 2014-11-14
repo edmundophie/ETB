@@ -2,13 +2,16 @@
 	width:960px;
 	text-align:center;
 }
-#main-katalog{
+.main-katalog{
 	width:inherit;
 	text-align:center;
+	position: fix;
 }
 #wrapper-olahraga{
 	text-align:center;
 	float:left;
+		margin-left:20px;
+
 }
 #wrapper-seni{
 	float:left;
@@ -29,4 +32,15 @@
 	float:left;
 	margin-left:20px;
 	text-align:center;
+}
+
+.olahraga{
+	float:left;
+	margin-left:20px;
+	text-align:center;
+	width:150px;
+}
+.olahraga img{
+	width:150px;
+	height:200px;
 }
