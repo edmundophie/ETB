@@ -2,6 +2,11 @@ body {
   padding-top: 70px;
 }
 
+.bgimage img{
+	height:100%;
+	width:100%;
+}
+
 @media (max-width:768px) {
 	.container {
 		width: 830px !important;

@@ -7,10 +7,12 @@
     <link rel="icon" href="favicon.ico">
 
     <title>E-BukuBekas</title>
-
+<link href= "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/start/jquery-ui.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/profil.css" rel="stylesheet">
+    <link href="css/popup.css" rel="stylesheet">
+
   </head>
 
   <body>
@@ -65,87 +67,54 @@
     
     <!-- Main content goes here! -->
     <div class="container main">
-      <h4>Profil User</h4>
-      <div class="r1 container">
-        <div class="col-xs-8 overview">
-          <div class="col-xs-4 avatar">
-            <img src="img/ava.png" alt="..." class="img-rounded">
-            <span>
-              <h5>Edmund Ophie</h5>
-            </span>
-          </div>
-          <div class="col-xs-8 overview-right">
-            <span>
-              <div class="rating">
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <h5>Rating: 85/100</h5>
-              </div>
-              <div class="activity">
-                <p><span class="glyphicon glyphicon-tint"></span> User is online</p>
-                <p><em>Aktivitas terakhir: 5 Nov 2014</em></p>
-              </div>
-            </div>
-          </span>
-        </div>
-        <div class="col-xs-4 statistic">
-          <span>
-            <ul class="list-unstyled">
-              <li><span class="glyphicon glyphicon-tags"> </span> 6 buku sedang dijual</li>
-              <li><span class="glyphicon glyphicon-usd"></span> 241 buku terjual</li>
-              <li><span class="glyphicon glyphicon-shopping-cart"></span> 15 buku telah dibeli</li>
-              <li><span class="glyphicon glyphicon-user"></span> Member sejak Januari 2009</li>
-            </ul>
-          </span>
-        </div>
-      </div>
-      <div class="r2 container">
-        <div class="col-xs-8 listing">
-          <h4><span class="glyphicon glyphicon-tag"></span> Selling</h4>
-          <div class="booklist">
-            <div class="col-xs-3">
-              <img src="img/calculus.png" alt="" class="img-thumbnail">
-              <h5 class="judulbuku"><a href="#"><strong>Calculus</strong></a></h5>
-              <p>Rp 58,000</p>
-            </div>
-            <div class="col-xs-3">
-              <img src="img/fisika.png" alt="" class="img-thumbnail">
-              <h5 class="judulbuku"><a href="#"><strong>Physic</strong></a></h5>
-              <p>Rp 68,000</p>
-            </div>
-            <div class="col-xs-3">
-              <img src="img/dre.png" alt="" class="img-thumbnail">
-              <h5 class="judulbuku"><strong><a href="#"><a href="#">DRE</a></strong></h5>
-              <p>Rp 92,000</p>
-            </div>
-            <div class="col-xs-3">
-              <img src="img/fisika.png" alt="" class="img-thumbnail">
-              <h5 class="judulbuku"><a href="#"><strong>Physic</strong></a></h5>
-              <p>Rp 89,000</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-4 userinfo">
-          <h4><span class="glyphicon glyphicon-info-sign"></span> Informasi User</h4>
-          <ul class="list-unstyled">
-            <span class="userinfo-wrap">
-              <li>Nama <span>: Edmund Ophie</span></li>
-              <li>NIM <span>: 13512095</span></li>
-              <li>Jurusan <span>: Informatika</span></li>
-              <li>Alamat <span>: Jl Cisitu Baru 41</span></li>
-              <li>&nbsp;<span>&nbsp;&nbsp;Bandung</span></li>
-              <li>HP <span>: 081224285937</span></li>
-              <li>Email <span>: edmund@ophie.com</span></li>
-            </span>
-          </ul>
-          <div class="chat">
-            <span class="glyphicon glyphicon-comment"></span> <a href="#"><small>Chat with user</small></a> or <a href="#"><small>send a message</small></a>
-          </div>
-        </div>
-      </div>
+      <h1>History Pembelian</h1>
+      <div>
+		<hr>
+	  </div>
+	  <div>
+			<table class="table">
+				<thead>
+					<tr onclick="showPop();">
+						<th>Nomor</th>
+						<th>Judul</th>
+						<th>Tanggal Pembelian</th>
+						<th>Status</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="active">
+						<td>1</td>
+						<td>The Lean Startup - Eric Ries</td>
+						<td>04/07/2014</td>
+						<td>Lunas</td>
+					</tr>
+					<tr class="success">
+						<td>2</td>
+						<td>7 Hari Menjadi Jawara di Internet</td>
+						<td>01/07/2014</td>
+						<td>Lunas</td>
+					</tr>
+					<tr class="info">
+						<td>3</td>
+						<td>Carding for Beginner</td>
+						<td>05/07/2014</td>
+						<td>Lunas</td>
+					</tr>
+					<tr class="warning">
+						<td>4</td>
+						<td>Human and Computer Interaction Design</td>
+						<td>03/07/2014</td>
+						<td>Lunas</td>
+					</tr>
+					<tr class="danger">
+						<td>5</td>
+						<td>Fundamentals of Electric Circuits</td>
+						<td>06/07/2014</td>
+						<td>Lunas</td>
+					</tr>
+				</tbody>
+			</table>
+	  </div>
     </div>
     
     <div class="clear"></div>
@@ -192,7 +161,39 @@
     <div class="container copyright">
       <p>© 2014 Copyright E-BukuBekas. All Rights Reserved.</p>
     </div>
+
+	<div class="overlay" id="overlay">
+		<div class="resizable" >
+			<a class="boxclose" id="boxclose"></a>
+			<iframe width="420" height="315" src="http://www.youtube.com/embed/U7wEctHyuc0?rel=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script>
+	$(function() {
+		$( ".resizable" ).resizable({
+		animate: true, animateEasing: 'swing', animateDuration: 500
+		});
+	});
+	</script>
+
+	<script>
+	$(document).ready(function(){
+	  function showPop(){
+		function(){
+			$("#overlay, .resizable, iframe").fadeIn(1000);
+			$(".resizable iframe").css('display', 'block');
+		}
+	  };
+	 
+		$("#boxclose").click(function(){
+				$("#overlay, .resizable, iframe").fadeOut(1000);
+				$( 'iframe' ).attr( 'src', function ( i, val ) { return val; });
+				$( "iframe" ).hide();
+			});
+	});
+	</script>
   </body>
 </html>
