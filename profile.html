@@ -24,7 +24,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="katalog.html">E-BukuBekas</a>
+          <a class="navbar-brand" href="#">E-BukuBekas</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -48,14 +48,23 @@
               </div>
             </li>
             <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-bell"></span></a></li>
+            <li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-bell"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">Notifikasi</li>
+                <li class="divider"></li>
+                <li><a href="notifikasi.html">Christ mengirim pesan kepada kamu</a></li>
+                <li><a href="notifikasi.html">Husain mengirim pesan kepada kamu</a></li>
+              </ul>
+			</li>
+	
             <li><a href="#" class="red"><span class="glyphicon glyphicon-envelope"></span> <strong>2</strong></a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Welcome, Edmund <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="profile.html"><span class="glyphicon glyphicon-user"></span> My profile</a></li>
+                <li><a href="./"><span class="glyphicon glyphicon-user"></span> My profile</a></li>
                 <li><a href="./"><span class="glyphicon glyphicon-wrench"></span> Settings</a></li>
-                <li><a href="index.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>  
+                <li><a href="./"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>  
               </ul>
             </li>
           </ul>
@@ -65,6 +74,30 @@
     
     <!-- Main content goes here! -->
     <div class="container main">
+      <!-- /.ini allertnya -->
+             <div class="modal fade" id="Report">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">Form Laporan</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>Jika Anda Yakin ingin melaporkan User ini, isi alasan anda dibawah ini&hellip;</p>
+                  </div>
+                  <div class="thumbnail">
+                      <form class="caption">
+                        <textarea class="form-control" id="message-text"></textarea>
+                      </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Batalkan</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Kirim</button>
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+      
       <h4>Profil User</h4>
       <div class="r1 container">
         <div class="col-xs-8 overview">
@@ -144,6 +177,7 @@
           <div class="chat">
             <span class="glyphicon glyphicon-comment"></span> <a href="#"><small>Chat with user</small></a> or <a href="#"><small>send a message</small></a>
           </div>
+          <div class="huhu"><button class="btn btn-primary" data-toggle="modal" data-target="#Report">Report</button></div>
         </div>
       </div>
     </div>

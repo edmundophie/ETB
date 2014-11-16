@@ -11,9 +11,11 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/profil.css" rel="stylesheet">
+    <link href="css/katalog.css" rel="stylesheet">
+
   </head>
 
-  <body>
+	<body onload="ganti_gambar();seni_ganti_gambar();teknik_ganti_gambar();science_ganti_gambar();novel_ganti_gambar();">
      <!-- /.ini allertnya -->
          <div class="modal fade" id="notif">
           <div class="modal-dialog">
@@ -72,7 +74,7 @@
                 <span class="glyphicon glyphicon-search"></span>
               </div>
             </li>
-            <li><a href="#"><span class="glyphicon glyphicon-file"></span></a></li>
+            <li><a href="managepost.html"><span class="glyphicon glyphicon-file"></span></a></li>
             <li><a href="manageuser.html"><span class="glyphicon glyphicon-user"></span></a></li>
             <li class="dropdown">
              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-bell"></span></a>
@@ -96,16 +98,107 @@
     </nav>
     
     <!-- Main content goes here! -->
-    
-    <div class="container main" id="adminmode">
-        <h1>Admin Mode</h1>
-        <h2>what You Can Manage is . . .</h2>
-        <div class="tombol"><a class="btn btn-primary btn-lg" href="managepost.html" role="button">Edit Post</a>
-        <a class="btn btn-primary btn-lg" href="manageuser.html" role="button">Edit User</a></div>
-        <button type="button" class="close" data-dismiss="alert">
-              <span aria-hidden="true">&times;</span>
-              <span class="sr-only">Close</span>
-        </button>
+    <div class="container main">
+		
+		 <!-- /.ini allertnya -->
+            <div class="modal fade" id="Blokir">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">******KONFIRMASI MEMBLOKIR USER******</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>Anda Yakin ingin memblokir user ini?&hellip;</p>
+                  </div>
+                  <div class="thumbnail">
+                      <img src="img/ava.png">
+                      <div class="caption">
+                        <h3>Si Fulan</h3>
+                        <p>...</p>
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Tidak</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">BLOKIR</button>
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+            
+            
+            <!-- /.ini allertnya -->
+            <div class="modal fade" id="unBlokir">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">******KONFIRMASI MEMBUKA USER******</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>Anda Yakin ingin membuka user ini?&hellip;</p>
+                  </div>
+                  <div class="thumbnail">
+                      <img src="img/ava.png">
+                      <div class="caption">
+                        <h3>Si Fulan</h3>
+                        <p>...</p>
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Tidak</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">BUKA</button>
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+		
+		<div id="katalog">
+			<div id="header-katalog">
+				<h3 style="float:left;">Manage User</h3>
+			</div>
+			
+			&nbsp;<hr>
+			<div class="row">
+              <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                  <img src="img/ava.png">
+                  <div class="caption">
+                    <h3>Edmund Ophie</h3>
+                    <p>...</p>
+                    <p><button data-toggle="modal" data-target="#Blokir" class="btn btn-primary" role="button">Banned</button> <button data-toggle="modal" data-target="#unBlokir" class="btn btn-default" role="button">UnBaned</button></p>
+                  </div>
+                </div>
+                <div class="thumbnail">
+                  <img src="img/ava.png">
+                  <div class="caption">
+                    <h3>Lala</h3>
+                    <p>...</p>
+                    <p><button data-toggle="modal" data-target="#Blokir" class="btn btn-primary" role="button">Banned</button> <button data-toggle="modal" data-target="#unBlokir" class="btn btn-default" role="button">UnBaned</button></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                  <img src="img/ava.png">
+                  <div class="caption">
+                    <h3>Kuda</h3>
+                    <p>...</p>
+                    <p><button data-toggle="modal" data-target="#Blokir" class="btn btn-primary" role="button">Banned</button> <button data-toggle="modal" data-target="#unBlokir" class="btn btn-default" role="button">UnBaned</button></p>
+                  </div>
+                </div>
+                <div class="thumbnail">
+                  <img src="img/ava.png">
+                  <div class="caption">
+                    <h3>Spongebob</h3>
+                    <p>...</p>
+                    <p><button data-toggle="modal" data-target="#Blokir" class="btn btn-primary" role="button">Banned</button> <button data-toggle="modal" data-target="#unBlokir" class="btn btn-default" role="button">UnBaned</button></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+		</div>
     </div>
     
     <div class="clear"></div>
@@ -154,5 +247,10 @@
     </div>
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+	<script src="js/olahraga-slideshow.js"></script>
+	<script src="js/seni-slideshow.js"></script>
+	<script src="js/teknik-slideshow.js"></script>
+	<script src="js/science-slideshow.js"></script>
+	<script src="js/novel-slideshow.js"></script>
   </body>
 </html>
