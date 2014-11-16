@@ -48,7 +48,16 @@
               </div>
             </li>
             <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-bell"></span></a></li>
+            <li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-bell"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">Notifikasi</li>
+                <li class="divider"></li>
+                <li><a href="notifikasi.html">Christ mengirim pesan kepada kamu</a></li>
+                <li><a href="notifikasi.html">Husain mengirim pesan kepada kamu</a></li>
+              </ul>
+			</li>
+	
             <li><a href="#" class="red"><span class="glyphicon glyphicon-envelope"></span> <strong>2</strong></a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Welcome, Edmund <span class="caret"></span></a>
@@ -65,6 +74,133 @@
     
     <!-- Main content goes here! -->
     <div class="container main">
+      
+        <div class="modal fade" id="chat">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">Chat Form</h4>
+                  </div>
+                  <div class="modal-body">
+                      <div class="chat">
+                        <div class="left clearfix"><span class="chat-img pull-left">
+                            <img src="http://placehold.it/50/55C1E7/fff&amp;text=U" alt="User Avatar" class="img-circle">
+                        </span>
+                            <div class="chat-body clearfix">
+                                <div class="header">
+                                    <strong class="primary-font">Edmund Ophie</strong> <small class="pull-right text-muted">
+                                        <span class="glyphicon glyphicon-time"></span>12 mins ago</small>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
+                                    dolor, quis ullamcorper ligula sodales.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="right clearfix"><span class="chat-img pull-right">
+                            <img src="http://placehold.it/50/FA6F57/fff&amp;text=ME" alt="User Avatar" class="img-circle">
+                        </span>
+                            <div class="chat-body clearfix">
+                                <div class="header">
+                                    <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>13 mins ago</small>
+                                    <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
+                                    dolor, quis ullamcorper ligula sodales.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="left clearfix"><span class="chat-img pull-left">
+                            <img src="http://placehold.it/50/55C1E7/fff&amp;text=U" alt="User Avatar" class="img-circle">
+                        </span>
+                            <div class="chat-body clearfix">
+                                <div class="header">
+                                    <strong class="primary-font">Edmund Ophie</strong> <small class="pull-right text-muted">
+                                        <span class="glyphicon glyphicon-time"></span>14 mins ago</small>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
+                                    dolor, quis ullamcorper ligula sodales.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="right clearfix"><span class="chat-img pull-right">
+                            <img src="http://placehold.it/50/FA6F57/fff&amp;text=ME" alt="User Avatar" class="img-circle">
+                        </span>
+                            <div class="chat-body clearfix">
+                                <div class="header">
+                                    <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>15 mins ago</small>
+                                    <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
+                                    dolor, quis ullamcorper ligula sodales.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="input-group">
+                        <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-warning btn-sm" id="btn-chat">
+                                Send</button>
+                        </span>
+                    </div>
+                  </div>
+               </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->   
+        <!-- /.ini allertnya -->
+             <div class="modal fade" id="Report">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">Form Laporan</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>Jika Anda Yakin ingin melaporkan User ini, isi alasan anda dibawah ini&hellip;</p>
+                  </div>
+                  <div class="thumbnail">
+                      <form class="caption">
+                        <textarea class="form-control" id="message-text"></textarea>
+                      </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Batalkan</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Kirim</button>
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+            
+            <div class="modal fade" id="Message">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">Form Message</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>Isi Pesan Anda Disini . . .&hellip;</p>
+                  </div>
+                  <div class="thumbnail">
+                      <form class="caption">
+                        <textarea class="form-control" id="message-text"></textarea>
+                      </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Batalkan</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Kirim Pesan</button>
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+      
       <h4>Profil User</h4>
       <div class="r1 container">
         <div class="col-xs-8 overview">
@@ -142,8 +278,9 @@
             </span>
           </ul>
           <div class="chat">
-            <span class="glyphicon glyphicon-comment"></span> <a href="#"><small>Chat with user</small></a> or <a href="#"><small>send a message</small></a>
+            <span class="glyphicon glyphicon-comment"></span> <a href="#" data-toggle="modal" data-target="#chat"><small>Chat with user</small></a> or <a href="#" data-toggle="modal" data-target="#Message"><small>send a message</small></a>
           </div>
+          <div class="huhu"><button class="btn btn-primary" data-toggle="modal" data-target="#Report">Report</button></div>
         </div>
       </div>
     </div>

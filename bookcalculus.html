@@ -67,6 +67,30 @@
 
 		<!-- Main content goes here! -->
 		<div class="container main">
+			<!-- /.ini allertnya -->
+             <div class="modal fade" id="Report">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">Form Laporan</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>Jika Anda Yakin ingin melaporkan post ini, isi alasan anda dibawah ini&hellip;</p>
+                  </div>
+                  <div class="thumbnail">
+                      <form class="caption">
+                        <textarea class="form-control" id="message-text"></textarea>
+                      </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Batalkan</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Kirim</button>
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
 			<h4>Calculus</h4>
 			<div class="r1 container">
 				<div class="col-xs-6">
@@ -90,7 +114,8 @@
 							<li>Mata Kuliah <span>: MA1101 Kalkulus 1A</span></li>
 							<li>Jmlh Halaman <span>: 900 halaman</span></li>
 							<li>Seller <span>: <a href="#">Aryya Dwisatya</a></span></li>
-							<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Add To Cart</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Add To Cart</a><a><br></a>
+							<a href="#" data-toggle="modal" data-target="#Report"><span class="glyphicon glyphicon-warning-sign"></span>Report</a></li>
 						</span>
 					</ul>
 				</div>

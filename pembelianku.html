@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+
+    <title>E-BukuBekas</title>
+<link href= "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/start/jquery-ui.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/profil.css" rel="stylesheet">
+    <link href="css/popup.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">E-BukuBekas</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Browse <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">Category</li>
+                <li class="divider"></li>
+                <li><a href="#">Category #1</a></li>
+                <li><a href="#">Category #2</a></li>
+                <li><a href="#">Category #3</a></li>
+                <li><a href="#">Category #...</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <div class="search-wrap">
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="glyphicon glyphicon-search"></span>
+              </div>
+            </li>
+            <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-bell"></span></a></li>
+            <li><a href="#" class="red"><span class="glyphicon glyphicon-envelope"></span> <strong>2</strong></a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Welcome, Edmund <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="./"><span class="glyphicon glyphicon-user"></span> My profile</a></li>
+                <li><a href="./"><span class="glyphicon glyphicon-wrench"></span> Settings</a></li>
+                <li><a href="./"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>  
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+    <!-- Main content goes here! -->
+    <div class="container main">
+      <h1>History Pembelian</h1>
+      <div>
+		<hr>
+	  </div>
+	  <div>
+			<table class="table">
+				<thead>
+					<tr onclick="showPop();">
+						<th>Nomor</th>
+						<th>Judul</th>
+						<th>Tanggal Pembelian</th>
+						<th>Status</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="active">
+						<td>1</td>
+						<td>The Lean Startup - Eric Ries</td>
+						<td>16/11/2014</td>
+						<td>Lunas</td>
+					</tr>
+					<tr class="success">
+						<td>2</td>
+						<td>7 Hari Menjadi Jawara di Internet</td>
+						<td>16/11/2014</td>
+						<td>Lunas</td>
+					</tr>
+					<tr class="info">
+						<td>3</td>
+						<td>Carding for Beginner</td>
+						<td>05/07/2014</td>
+						<td>Lunas</td>
+					</tr>
+					<tr class="warning">
+						<td>4</td>
+						<td>Human and Computer Interaction Design</td>
+						<td>03/07/2014</td>
+						<td>Lunas</td>
+					</tr>
+					<tr class="danger">
+						<td>5</td>
+						<td>Fundamentals of Electric Circuits</td>
+						<td>06/07/2014</td>
+						<td>Lunas</td>
+					</tr>
+				</tbody>
+			</table>
+	  </div>
+    </div>
+    
+    <div class="clear"></div>
+    <div class="footer">
+      <div class="container">
+        <div class="col-xs-3 contact-wrap">
+          <span class="contact">
+            <button class="btn btn-primary btn-lg btn-block">Hubungi E-BukuBekas</button>
+            <h2><a href="#">E-BukuBekas</a></h2>
+          </span>
+        </div>
+        <div class="col-xs-9">
+          <div class="col-xs-4">
+            <ul class="list-unstyled">
+              <h4>E-BukuBekas</h4>
+              <li><a href="#"><a href="#">Tentang E-BukuBekas</a></li>
+              <li><a href="#">Aturan Penggunaan</a></li>
+              <li><a href="#">Kebijakan Privasi</a></li>
+              <li><a href="#">Berita & Pengumuman</a></li>
+              <li><a href="#">Karir</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-4">
+            <ul class="list-unstyled">
+              <h4>Pembelian</h4>
+              <li><a href="#">Cara Belanja</a></li>
+              <li><a href="#">Pembayaran</a></li>
+              <li><a href="#">Jaminan Aman</a></li>
+              <li><a href="#">Tips Berbelanja</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-4">
+            <ul class="list-unstyled">
+              <h4>Penjualan</h4>
+              <li><a href="#">Cara Berjualan</a></li>
+              <li><a href="#">Keuntungan Jualan</a></li>
+              <li><a href="#">Tips Berjualan</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright">
+      <p>© 2014 Copyright E-BukuBekas. All Rights Reserved.</p>
+    </div>
+
+	<div class="overlay" id="overlay">
+		<div class="resizable" >
+			<a class="boxclose" id="boxclose"></a>
+			<iframe width="420" height="315" src="http://www.youtube.com/embed/U7wEctHyuc0?rel=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script>
+	$(function() {
+		$( ".resizable" ).resizable({
+		animate: true, animateEasing: 'swing', animateDuration: 500
+		});
+	});
+	</script>
+
+	<script>
+	$(document).ready(function(){
+	  function showPop(){
+		function(){
+			$("#overlay, .resizable, iframe").fadeIn(1000);
+			$(".resizable iframe").css('display', 'block');
+		}
+	  };
+	 
+		$("#boxclose").click(function(){
+				$("#overlay, .resizable, iframe").fadeOut(1000);
+				$( 'iframe' ).attr( 'src', function ( i, val ) { return val; });
+				$( "iframe" ).hide();
+			});
+	});
+	</script>
+  </body>
+</html>
