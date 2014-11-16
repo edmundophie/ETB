@@ -7,7 +7,7 @@
     <link rel="icon" href="favicon.ico">
 
     <title>E-BukuBekas</title>
-
+    <link href="css/jquery-ui.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/profil.css" rel="stylesheet">
@@ -42,9 +42,9 @@
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <div class="search-wrap">
-                <input type="text" class="form-control" placeholder="Search">
-                <span class="glyphicon glyphicon-search"></span>
+              <div class="search-wrap ui-widget">
+				<input id="tags" class="form-control">
+                <span class="glyphicon glyphicon-search" onClick="hasilCari();"></span>
               </div>
             </li>
             <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
@@ -65,36 +65,9 @@
     
     <!-- Main content goes here! -->
     <div class="container main">
-	<table class="table table-condensed">
-		<thead>
-			<tr>
-				<th>Row</th>
-				<th>First Name</th>
-				<th>Last Name</th>
-				<th>Email</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr onClick="location.href = 'http://www.itb.ac.id'">
-				<td>1</td>
-				<td>John</td>
-				<td>Carter</td>
-				<td>johncarter@mail.com</td>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td>Peter</td>
-				<td>Parker</td>
-				<td>peterparker@mail.com</td>
-			</tr>
-			<tr>
-				<td>3</td>
-				<td>John</td>
-				<td>Rambo</td>
-				<td>johnrambo@mail.com</td>
-			</tr>
-		</tbody>
-	</table>
+    	<div id="edit-cari">
+    	
+    	</div>
     </div>
     
     <div class="clear"></div>
@@ -139,9 +112,17 @@
     </div>
 
     <div class="container copyright">
-      <p>© 2014 Copyright E-BukuBekas. All Rights Reserved.</p>
+      <p >© 2014 Copyright E-BukuBekas. All Rights Reserved.</p>
     </div>
-    <script src="js/jquery-2.1.1.min.js"></script>
+
     <script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/search.js"></script>
+	<script>
+	function hasilCari(){
+		$("#edit-cari").html('<table class="table table-condensed"><thead><tr onClick="hasilCari();"><th>Nomor</th><th>Judul</th><th>Penerbit</th><th>Penjual</th><th>Harga</th></tr></thead><tbody><tr onClick="location.href = \'http://www.itb.ac.id\'"><td>1</td><td>John</td><td>Carter</td><td>Pemrograman Berbasis Web</td><td>40000</td></tr><tr><td>2</td><td>Peter</td><td>Parker</td><td>Pemrograman Pascal Dasar</td><td>45000</td></tr><tr><td>3</td><td>John</td><td>Rambo</td><td>Pemrograman Berbasis Objek</td><td>40000</td></tr></tbody></table>');
+	}
+	</script>
   </body>
 </html>

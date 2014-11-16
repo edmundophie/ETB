@@ -1,0 +1,13 @@
+	.ui-autocomplete{
+max-height: 180px;
+max-width: 280px;
+overflow: auto;
+}
+.ui-corner-all{
+border-radius:0;
+}
+.ui-menu-item a:hover{
+background-image:none;
+background-color: #f1d597;
+border: none;
+}
