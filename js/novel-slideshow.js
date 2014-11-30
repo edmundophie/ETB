@@ -6,9 +6,9 @@
     var novel_img2=new Image();
     var novel_img3=new Image();
 
-    novel_img1.src="img/katalog/olahraga/1.jpg";
-    novel_img2.src="img/katalog/olahraga/2.jpg";
-    novel_img3.src="img/katalog/olahraga/3.jpg";
+    novel_img1.src="img/katalog/novel/1.jpg";
+    novel_img2.src="img/katalog/novel/2.jpg";
+    novel_img3.src="img/katalog/novel/3.jpg";
 
     function novel_ganti_gambar(){
 		if (document.images)

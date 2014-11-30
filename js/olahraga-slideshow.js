@@ -6,9 +6,9 @@
     var img2=new Image();
     var img3=new Image();
 
-    img1.src="img/katalog/olahraga/1.jpg";
-    img2.src="img/katalog/olahraga/2.jpg";
-    img3.src="img/katalog/olahraga/3.jpg";
+    img1.src="img/katalog/olahraga/4.jpg";
+    img2.src="img/katalog/olahraga/5.jpg";
+    img3.src="img/katalog/olahraga/6.jpg";
 
     function ganti_gambar(){
 		if (document.images)

@@ -6,9 +6,9 @@
     var teknik_img2=new Image();
     var teknik_img3=new Image();
 
-    teknik_img1.src="img/katalog/olahraga/1.jpg";
-    teknik_img2.src="img/katalog/olahraga/2.jpg";
-    teknik_img3.src="img/katalog/olahraga/3.jpg";
+    teknik_img1.src="img/katalog/teknik/1.jpg";
+    teknik_img2.src="img/katalog/teknik/2.jpg";
+    teknik_img3.src="img/katalog/teknik/3.jpg";
 
     function teknik_ganti_gambar(){
 		if (document.images)

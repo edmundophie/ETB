@@ -6,9 +6,9 @@
     var seni_img2=new Image();
     var seni_img3=new Image();
 
-    seni_img1.src="img/katalog/olahraga/1.jpg";
-    seni_img2.src="img/katalog/olahraga/2.jpg";
-    seni_img3.src="img/katalog/olahraga/3.jpg";
+    seni_img1.src="img/katalog/seni/1.jpg";
+    seni_img2.src="img/katalog/seni/2.jpg";
+    seni_img3.src="img/katalog/seni/3.jpg";
 
     function seni_ganti_gambar(){
 		if (document.images)
