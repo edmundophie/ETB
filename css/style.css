@@ -2,6 +2,10 @@ body {
   padding-top: 70px;
 }
 
+.index {
+  background: url("../img/background.jpg");
+}
+
 .bgimage img{
 	height:100%;
 	width:100%;
@@ -118,4 +122,10 @@ body {
 }
 
 .main {
+	height: 500px;
+}
+
+.login {
+	top: 50%;
+	transform:translateY(-50%);
 }
